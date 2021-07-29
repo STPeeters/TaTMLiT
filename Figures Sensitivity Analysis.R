@@ -1,4 +1,4 @@
-#Sensitivty analysis and visualisation by S.T Peeters and M.E. Kompier
+#Sensitivty analysis and visualisation by [names temporarily removed]
 #Last update 21-07-2021
 #This script used the TaT and MLiT measures as a predictor for sleep-related outcome measures
 #The dataset used for input should contain the TaT and MLiT metrics as calculated by the Matlab script
@@ -154,7 +154,7 @@ sensitivity_plot_TaT_DV <- ggplot(sensitivity_TaT_DV, aes(x = TaT, y = coefficie
   geom_errorbar(width=.05, aes(ymin=coefficient-se, ymax=coefficient+se, colour = significant)) +
   geom_point(aes(colour = significant)) +
   scale_colour_manual(values = c("gray0","gray50"), values = c(face = "bold", face = "regular" ),  name = "Significant",  labels = c("p < .05","NS")) +
-  ylab("Estimate ± SE") +
+  ylab("Estimate Â± SE") +
   scale_x_log10()+
   annotation_logticks(sides = "b")  +
   coord_cartesian(ylim = c(-0.1, 0.1))+
@@ -184,7 +184,7 @@ sensitivity_plot_MLiT_DV <- ggplot(sensitivity_MLiT_DV, aes(x = MLiT, y = coeffi
   geom_errorbar(width=.05, aes(ymin=coefficient-se, ymax=coefficient+se, colour = significant)) +
   geom_point(aes(colour = significant)) +
   scale_colour_manual(values = c("gray0","gray50"), name = "Significant",  labels = c("p < .05","NS")) + 
-  ylab("Estimate ± SE") +
+  ylab("Estimate Â± SE") +
   scale_x_log10()+
   annotation_logticks(sides = "b")  +
   coord_cartesian(ylim = c(-1, 1))+
