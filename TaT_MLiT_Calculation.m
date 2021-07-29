@@ -1,4 +1,4 @@
-%Calculation of TaT and MLiT by S.T.Peeters and M.E.Kompier
+%Calculation of TaT and MLiT by [names temporarily removed]
 %Last update 21-07-2021
 %This script is used to calculate the TaT and MLiT values. Calculations are
 %based on our lightlogger data and uses input such as timestamps for which
